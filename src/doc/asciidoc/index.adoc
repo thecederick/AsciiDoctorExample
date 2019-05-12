@@ -6,6 +6,14 @@ Doc Writer <doc@example.com>
 A preface about https://asciidoc.org[AsciiDoc]. +
 The latest version of the project is {project-version}.
 
+//Comment TODO s
+
+////
+Multiline comment
+TODO this is a todo example
+////
+
+
 == Links
 
 * https://asciidoctor.org/[AsciiDoc Main Page]
