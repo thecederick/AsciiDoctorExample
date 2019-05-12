@@ -1,0 +1,53 @@
+= Introduction to AsciiDoc
+Doc Writer <doc@example.com>
+
+:sourcedir: src/main/java
+
+A preface about https://asciidoc.org[AsciiDoc]. +
+The latest version of the project is {project-version}.
+
+== Links
+
+* https://asciidoctor.org/[AsciiDoc Main Page]
+* https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/[Quick syntax guide]
+* https://asciidoctor.org/docs/user-manual/[The User Manual]
+* https://asciidoctor.org/docs/asciidoctor-maven-plugin/[Maven Plugin]
+
+== Include
+
+include::sub/sub_doc.adoc[]
+
+include::../resources/resource.txt[]
+
+[source,ruby]
+puts "Hello, World!"
+
+[source,java]
+----
+package com.example.asciidoctorexample;
+
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Runner implements CommandLineRunner {
+    @Override
+    public void run(String... args) {
+        System.out.println("Hello World!");
+    }
+}
+----
+
+[source,java]
+----
+include::../../main/java/com/example/asciidoctorexample/AsciidoctorExampleApplication.java[]
+----
+
+[source,properties]
+----
+include::../../main/resources/application.properties[]
+----
+[source,yaml]
+----
+include::../../main/resources/test.yml[]
+----
